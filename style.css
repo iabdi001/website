@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    text-decoration: dashed;
+    list-style: upper-alpha;
+    border: armenian;
+    outline: backdrop;
+    scroll-behavior: smooth;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+:root {
+    --bg-color: #bdd9f3; 
+    --snd-bg-color: #ea4a8d; 
+    --text-color: #333333; 
+    --main-color: #e97451; 
+    --header-bg: #fff5d7; 
+    --header-hover-bg: #ffd7e1; 
+}
+
+html{
+    font-size: 63%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color)
+}
+
+section{
+    min-height: 120vh;
+    padding: 10rem 8% 2rem;
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background: var(--header-bg);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease;
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+    .logo{
+        font-size: 8vw;
+        color: var(--text-color);
+        font-weight: 800;
+        display: inline-block;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        white-space: nowrap;
+    }
+    .logo:hover {
+        color: #e97451; 
+        transition: color 0.3s ease;
+    }
+    @media (max-width: 768px) {
+        .logo {
+            font-size: 12vw; 
+        }
+    }
+    
+    
+    @media (max-width: 1024px) {
+        .logo {
+            font-size: 10vw; 
+        }
+    }
+    
+    
+    @media (min-width: 1440px) {
+        .logo {
+            font-size: 4rem; 
+        }
+    }
+
+
+
+    
+    #menu-icon {
+        font-size: 3.7rem; 
+        color: var(--main-color);
+        cursor: pointer;
+        display: none;
+        transition: transform 0.3s ease;
+    }
+    
+    
+    #menu-icon:hover {
+        transform: scale(1.2); /
+    }
+    span{
+        color: var(--main-color);
+    }
+
+    .navbar{
+        display: flex;
+    }
+
+    .navbar a{
+        font-size: 1.8rem;
+        font-weight: 500;
+        color:var(--text-color);
+        margin-left: 4rem;
+        transition: all 0.5s ease;
+        border-bottom: 3px solid transparent;
+    }
+    .navbar a:hover,
+    .navbar a.active{
+       color: var(--main-color);
+       border-bottom: 4px solid var(var(--main-color)) 
+    }
+    .nav-btn:hover{
+        background:var(--main-color);
+        color: var(--text-color);
+        box-shadow: 1 1 19px var(--main-color)
+
+    
+    }
+    
+    .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-content h3{
+        font-size: 5rem;
+        font-weight: 750;
+    }
+    span{
+        color: var(--header-bg)
+    }
+
+    .home-content h1{
+        font-size: 5.6rem;
+        font-weight: 710;
+        line-height: 1.4;
+        color: var(--main-color)
+    }
+    .home-content p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        color: var(--snd-bg-color)
+    
+    }
+
+
+    .btn{
+        display: inline-block;
+        padding: 1rem 2.8rem;
+        background: var(--main-color);
+        border-radius: 1.2rem;
+        box-shadow: none;
+        font-size: 1.8rem;
+        color:var(--snd-bg-color);
+        letter-spacing: 0.1rem;
+        font-weight: 610;
+        transition: 0.5s ease;
+    }
+    .btn:hover{
+        color: var(--text-color);
+        box-shadow: 0 0 1.5rem var(--main-color)
+    }
+
+    /*this is the service section code*/
+    #services {
+        padding: 100px 50px;
+        text-align: center;
+    }
+    
+    #services .heading {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    #services .heading span {
+        color: #f07b59;
+    }
+    
+    .services-content {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+    
+    .services-content .row {
+        text-align: center;
+        width: 300px;
+        background-color: #fdf4df;
+        padding: 20px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    
+    .services-content .row:hover {
+        transform: scale(1.05);
+    }
+    
+    .services-content img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    
+/* Membership Plans */
+#plans {
+    padding: 100px 50px;
+    background-color: #fdf4df;
+    text-align: center;
+}
+
+#plans .heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#plans .heading span {
+    color: #f07b59;
+}
+
+.plans-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Space between the boxes */
+    margin-top: 20px;
+}
+
+.plans-content .box {
+    background-color: #f8e3b4;
+    border-radius: 10px;
+    padding: 50px; /* Increased padding for more vertical height */
+    width: 49%; /* Increased width to cover more of the page */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.plans-content .box:hover {
+    transform: translateY(-10px);
+    background-color: #bcd4f7;
+}
+
+.plans-content .box h3 {
+    font-size: 2rem; /* Slightly larger font for the heading */
+    margin-bottom: 15px;
+}
+
+.plans-content .box ul {
+    list-style: none;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.plans-content .box ul li {
+    margin-bottom: 15px;
+}
+
+.plans-content .box .BOLO-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px; /* Adjusted padding for better button size */
+    border-radius: 20px;
+    background-color: #f07b59;
+    color: rgb(5, 1, 15);
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.plans-content .box .BOLO-btn:hover {
+    background-color: #dd6a45;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 2.5rem;
+    }
+
+    .plans-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .plans-content .box {
+        width: 90%; /* Full width for smaller screens */
+    }
+}
+
+
+
+        

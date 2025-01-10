@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BOLO BOLO</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#home" class="logo">BOLO <span>BOLO</span></a>
+        <div id="menu-icon" class="bx bx-menu"></div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#plans">Memberships</a>
+        </nav>
+        <a href="#" class="nav-btn">Become Bolo</a>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content" data-aos="zoom-in">
+            <h3>Become BOLO</h3>
+            <h1>Your Desired Physique</h1>
+            <h3><span class='multiple-text'>Believe You Can Achieve</span></h3>
+            <p>When faced with adversity, some turn tail but at BOLO BOLO we face it head on.</p>
+            <a href="#plans" class="btn">Join Now</a>
+            
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2 class="heading" data-aos="zoom-in-down">Bolo <span>Services</span></h2>
+        <div class="services-content" data-aos="zoom-in-up">
+            <!-- Services Section pop up -->
+            <div class="row" >
+                <img src="pexels-leonardho-1552252.jpg" alt="Fitness Image">
+                <h4>Strength<span>Fitness</span></h4>
+            </div>
+            <!-- Services Section popup box 2 -->
+            <div class="row">
+                <img src="pexels-pixabay-416717.jpg" alt="Muscle Image">
+                <h4>Fitness<span>Muscle</span></h4>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Membership Plans -->
+    <section id="plans">
+        <h2 class="heading" data-aos="zoom-in-down">Membership <span>Plans</span></h2>
+        <div class="plans-content" data-aos="zoom-in-up">
+            <div class="box one">
+                <h3>Basic</h3>
+                <p class="price"></p>£100/Month</p>
+                <ul>
+                    <li>Best Workout Plans</li>
+                    <li>Road To Strength</li>
+                    <li>Better Than The Rest</li>
+                </ul>
+                <a href="#Become BOLO" class="BOLO-btn">Become BOLO</a>
+            </div>
+            <div class="box two">
+                <h3>Advanced</h3>
+                <p class="price"></p>£199/Month</p>
+                <ul>
+                    <li>Advanced Workout Plans</li>
+                    <li>Road To BOLO</li>
+                    <li>Personal Sessions</li>
+                    <a href="#Become BOLO" class="BOLO-btn">Become BOLO</a>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script>
+        const texts = ["Believe You Can Achieve", "Build Your Physique", "Become BOLO"];
+        let currentTextIndex = 0;
+        const textElement = document.querySelector('.multiple-text');
+        
+        setInterval(() => {
+            textElement.textContent = texts[currentTextIndex];
+            currentTextIndex = (currentTextIndex + 1) % texts.length;
+        }, 3000); // Change text every 3 seconds
+    </script>
+    
+   
+   
+</body>
+</html>
+
